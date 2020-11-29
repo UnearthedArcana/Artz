@@ -1,0 +1,38 @@
+//@0 to @1000
+@0 = ~Install All new spells (including IWDEE spells if applicable)~
+@1 = ~Install IWDEE Spells only~
+@2 = ~BGEE or BG2EE required!~
+@3 = ~Install New Spells only~
+@4 = ~Install All new items (including IWDEE items if applicable)~
+@5 = ~New and Revised Spells~
+@6 = ~New Items~
+@8 = ~skipping component~
+@9 = ~Main Component~
+@10 = ~Scroll~
+@11 = ~Level: 1~
+@12 = ~Level: Orison~
+@13 = ~*Please be patient. This will take some time...*~
+@14 = ~IWDEE and New spells already installed!~
+@15 = ~IWDEE spells already installed!~
+@16 = ~New Spells already installed!~
+@17 = ~EE games only!~
+
+@18 = ~Install Infinite Innate Cantrips for all divine and arcane classes~
+@19 = ~Infinite Innate Cantrips~
+@20 = ~Install Infinite Innate Cantrips for all divine classes~
+@21 = ~Install Infinite Innate Cantrips for all arcane classes~
+@22 = ~Install Priest Scrolls~
+@23 = ~Cantrips and Modified Spell Lists~
+@24 = ~Install Innate HLAs through the Spell Menu Button~
+@25 = ~High Level Abilities~
+
+@50 = ~Install the Standard (Simulated PnP) version of Item creation for all casting classes~
+@51 = ~Install the Standard (Simulated PnP) version of Item creation for all casting classes~
+@52 = ~Item Creation~
+@53 = ~Install All Revised Spells (per ini)~
+
+@100= ~Add New Spells~
+@101= ~Add New Items~
+
+@162= ~Class 'Extras'~
+@180=~Add Spontaneous Casting for clerics and druids (by Pecca)~

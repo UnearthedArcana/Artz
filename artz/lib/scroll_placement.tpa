@@ -1,0 +1,161 @@
+//Druid exclusive: B_DS
+//Cleric exclusive: B_CS
+//non-exclusive: B_PS
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+///////////                         ////////////
+///////////     Temple of Oghma     ////////////
+///////////                         ////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+//1st lev general or cleric exclusive
+ACTION_IF FILE_EXISTS_IN_GAME ~TEM2601.STO~ BEGIN  //Temple of Oghma-only if installed
+  COPY_EXISTING_REGEXP GLOB ~B_CS1.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2601.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_GS1.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2601.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    // general spells
+    END
+END
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+///////////                         ////////////
+///////////     Temple of Wisdom    ////////////
+///////////                         ////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+//1st through 3rd priest scrolls (including druid)
+ACTION_IF FILE_EXISTS_IN_GAME ~TEM2304.STO~ BEGIN  //Temple of wisdom
+
+  COPY_EXISTING_REGEXP GLOB ~B_CS1.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_CS2.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_CS3.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+
+  COPY_EXISTING_REGEXP GLOB ~B_GS1.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_GS2.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_GS3.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+//druid
+  COPY_EXISTING_REGEXP GLOB ~B_DS1.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_DS2.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_DS3.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM2304.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+
+END   //end if temp of wisdom in game
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+///////////                         ////////////
+///////////     Temple of Helm      ////////////
+///////////                         ////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+//1st through 3rd lev priest (app for clerics of helm)
+ACTION_IF FILE_EXISTS_IN_GAME ~TEM0002.sto~ BEGIN  //
+  COPY_EXISTING_REGEXP GLOB ~B_CS1.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM0002.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_CS2.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM0002.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_CS3.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM0002.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+
+  COPY_EXISTING_REGEXP GLOB ~B_GS1.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM0002.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_GS2.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM0002.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+  COPY_EXISTING_REGEXP GLOB ~B_GS3.*\.ITM~ ~override~    // 1st level cleric exclusive
+    INNER_PATCH_SAVE scroll ~%SOURCE_RES%~ BEGIN
+    END
+    INNER_ACTION BEGIN
+        COPY_EXISTING ~TEM0002.STO~ ~override~
+          ADD_STORE_ITEM ~%scroll%~ #1 #0 #0 ~IDENTIFIED~ #2    //
+    END
+
+END//End temp of Helm
