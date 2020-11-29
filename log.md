@@ -6,4 +6,4 @@ Version 0.00.01
 
 2020-11-29
 
-- Port icon for Concenting on Bless
+- Port icon for Concentrating on Bless
