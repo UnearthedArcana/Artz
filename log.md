@@ -6,8 +6,8 @@ Spook
   
 Blur  
 Horror  
-Invisibility  
-Ray of Enfeeblement  
+Invisibility
+Ray of Enfeeblement
 Resist Fear   
 Stinking Cloud  
 Strength   
@@ -133,8 +133,23 @@ Storm of Vengeance
 Summon * Deva 
 
 # Done
-Version 0.00.01
+
+Version 0.00.02
+
+2020-11-30
+
+- Removed a number of unneeded files to reduce clutter
+
+- Started ADD_ICONS AF (finished what I need for basic icons)
+
+- added 1st level mage concentrating on x bams
 
 2020-11-29
+
+- created a number of icons and port icons for B_Spells
+
+
+Version 0.00.01
+
 
 - Port icon for Concentrating on Bless
