@@ -1,7 +1,7 @@
 BACKUP ~backup/port_icons~
 AUTHOR ~Grammarsalad~
 
-VERSION ~0.00.01~
+VERSION ~0.00.03~
 
 
 ALWAYS
@@ -65,6 +65,35 @@ BEGIN ~Portrait Icons~
 ///////                                                   ///////
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
+
+///////////////////////////////////
+//////////General
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1037) //Concentrating
+    STR_VAR spell_name = ~SPWI101~ //just a placeholder
+            pathP  = ~%mod_folder%/data/port_icons/mage_1/B_CONC1.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI101.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+
+COPY_EXISTING ~SPWI102.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+
+//...
+*/
+
 
 ///////////////////////////////////
 //////////Mage Spells Level 1
@@ -365,13 +394,213 @@ COPY_EXISTING ~SPWI125.spl~ ~override~
 LAF ADD_ICONS
     INT_VAR port_text = RESOLVE_STR_REF(@1026) //Concentrating on Blur
     STR_VAR spell_name = ~SPWI201~
-            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_BLUR1.bam~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_BLUR2.bam~
     RET     port_icon
 END
 
 /*
 //use eg
 COPY_EXISTING ~SPWI201.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Horror
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1027) //Concentrating on Horror
+    STR_VAR spell_name = ~SPWI205~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_FEAR2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI205.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Invisibility
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1028) //Concentrating on Invisibility
+    STR_VAR spell_name = ~SPWI206~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_DINV2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI206.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Ray of Enfeeblement
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1029) //Concentrating on Ray of Enfeeblement
+    STR_VAR spell_name = ~SPWI221~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_FEEB2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI221.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Resist Fear
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1030) //Concentrating on Ray of Resist Fear
+    STR_VAR spell_name = ~SPWI210~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_RFEA2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI210.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Stinking Cloud
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1031) //Concentrating on Stinking Cloud
+    STR_VAR spell_name = ~SPWI213~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_SCLD2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI213.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Strength
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1032) //Concentrating on Strength
+    STR_VAR spell_name = ~SPWI214~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_STR2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI214.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Web
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1033) //Concentrating on Web
+    STR_VAR spell_name = ~SPWI215~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_WEB2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI215.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Luck
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1034) //Concentrating on Luck
+    STR_VAR spell_name = ~SPWI209~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_LUCK2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI209.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Mirror Image
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1035) //Concentrating on Mirror Image
+    STR_VAR spell_name = ~SPWI212~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_MIMG2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI212.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Chaos Shield
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1036) //Concentrating on Chaos Shield
+    STR_VAR spell_name = ~SPWI222~
+            pathP  = ~%mod_folder%/data/port_icons/mage_2/B_CSHD2.bam~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPWI222.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
 */
 

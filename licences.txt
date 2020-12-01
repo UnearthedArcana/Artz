@@ -31,3 +31,5 @@ B_W106x: by Delapouite (1-4) cropped
 B_1W1XXx: by Lorc (1-4)
 
 B_WZ105: by Lorc (1-3)
+
+B_CONC1: by Lorc (4) removed 'beating heart', and cut off top of head

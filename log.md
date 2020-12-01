@@ -134,6 +134,14 @@ Summon * Deva
 
 # Done
 
+Version 0.00.03
+
+2020-12-01
+
+- Concentrating on lev 2 wiz
+
+- Created general concentrating icon
+
 Version 0.00.02
 
 2020-11-30
