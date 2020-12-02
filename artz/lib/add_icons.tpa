@@ -8,13 +8,14 @@ DEFINE_ACTION_FUNCTION ADD_ICONS
             pathB             = "SAME"    //path to "B" icon (optional)
             pathC             = "SAME"    //path to "C" icon (optional)
             pathP             = "SAME"    //path to portrait icon (optional)
+            port_exist        = "SAME"    //portrait icon if already in game(optional)
             scroll            = "SAME"    //filename of scroll--will create a scroll if pathA AND this field not "SAME" (optional)
             spell_name        = "SAME"    //filename of spell that is getting the icons--assumes spell was added prior (required)
   RET       iconA                         //name of iconA
             iconB                         //name of iconB
             iconC                         //name of iconC
             iconP                         //name of portrait icon
-            port_icon                     //Returns portrait icon line for removal/protection
+            port_icon                     //Returns portrait icon line for removal/protection/ALTER_EFFECT, etc.
 //          scroll_icon                   //Returns "A" icon for scrolls--needed?
 
 BEGIN
@@ -87,9 +88,28 @@ INSERT_2DA_ROW rows cols ~%max%   %strref%   %iconP%~
 PRETTY_PRINT_2DA
         OUTER_SPRINT ~port_icon~ ~max~ //line # for icon
 
-   END //end add portrait icon
+   END //end add portrait icon path
+   ACTION_IF ("%port_exist%" STRING_COMPARE_CASE "SAME" != 0) BEGIN    // portrait is in game (pathP sould be default!)
+        COPY_EXISTING ~%port_exist%.BAM~ override
+            SET strref = %port_text% //
+               INNER_PATCH_SAVE iconP ~%SOURCE_RES%~ BEGIN END //icon a named %iconP%
+//Add icon to STATEDEC.2da (Thanks kjeron and argent77!!!)
+ COPY_EXISTING ~STATDESC.2DA~ override
+  COUNT_2DA_COLS cols
+  COUNT_2DA_ROWS cols rows
+  SET max = 0
+  FOR (i = 0; i < rows; ++i) BEGIN
+   READ_2DA_ENTRY i 0 cols num
+   PATCH_IF num > max BEGIN max = num END
+  END
+SET max += 1
+INSERT_2DA_ROW rows cols ~%max%   %strref%   %iconP%~
+PRETTY_PRINT_2DA
+        OUTER_SPRINT ~port_icon~ ~max~ //line # for icon
+   END //end port icon in game
+
 //if no P
-   ACTION_IF ("%pathP%" STRING_COMPARE_CASE "SAME" = 0) BEGIN    //
+   ACTION_IF ("%pathP%" STRING_COMPARE_CASE "SAME" = 0) AND ("%port_exist%" STRING_COMPARE_CASE "SAME" = 0) BEGIN    //
         OUTER_SPRINT ~iconP~ ~nil~ //icon a named %iconP%
         OUTER_SPRINT ~port_icon~ ~nil~ //line # for icon
    END //if no A

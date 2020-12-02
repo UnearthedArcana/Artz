@@ -134,9 +134,14 @@ Summon * Deva
 
 # Done
 
-Version 0.00.03
+Version 0.00.04
 
 2020-12-01
+
+- updated ADD_ICONS function to take standalone port icons (and all first and sec mage lev spls
+
+Version 0.00.03
+
 
 - Concentrating on lev 2 wiz
 
