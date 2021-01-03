@@ -79,7 +79,7 @@ BEGIN ~Portrait Icons~
 LAF ADD_ICONS
     INT_VAR port_text = RESOLVE_STR_REF(@1037) //Concentrating
     STR_VAR spell_name = ~SPWI101~ //just a placeholder
-            pathP  = ~%mod_folder%/data/port_icons/mage_1/B_CONC1.bam~
+            pathP  = ~%mod_folder%/data/port_icons/misc/B_CONC1.bam~
     RET     port_icon
 END
 
@@ -98,26 +98,6 @@ COPY_EXISTING ~SPWI102.spl~ ~override~
 ///////////////////////////////////
 //////////Mage Spells Level 1
 
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Grease
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1025) //Concentrating on Grease
-    STR_VAR spell_name = ~SPWI101~ //
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-
-/*
-//use eg
-COPY_EXISTING ~SPWI101.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
 //__________________________________________________________________________________
 //__________________________________________________________________________________
 //
@@ -162,38 +142,19 @@ COPY_EXISTING ~SPWI104.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
 */
 
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Blind
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1014) //concentrating on blindness
-    STR_VAR spell_name = ~SPWI106~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-
-/*
-//use eg
-COPY_EXISTING ~SPWI106.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
+///////////////////////////////////
+//////////Priest Spells Level 1
 
 //__________________________________________________________________________________
 //__________________________________________________________________________________
 //
-//			Concentrating on Friends
+//			Concentrating on Armor of Faith
 //__________________________________________________________________________________
 //__________________________________________________________________________________
 
 LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1015) //concentrating on friends
-    STR_VAR spell_name = ~SPWI107~
+    INT_VAR port_text = RESOLVE_STR_REF(@1045) //concentrating on armor of faith
+    STR_VAR spell_name = ~SPPR111~
             port_exist = ~B_CONC1~
     RET     port_icon
 END
@@ -202,209 +163,36 @@ END
 
 /*
 //use eg
-COPY_EXISTING ~SPWI107.spl~ ~override~
+COPY_EXISTING ~SPPR111.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
 */
 
 //__________________________________________________________________________________
 //__________________________________________________________________________________
 //
-//			Concentrating on Protection From Petrification
+//			Concentrating on Bless
 //__________________________________________________________________________________
 //__________________________________________________________________________________
 
 LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1016) //concentrating on Protection From Petrification
-    STR_VAR spell_name = ~SPWI108~
+    INT_VAR port_text = RESOLVE_STR_REF(@1047) //concentrating on bless
+    STR_VAR spell_name = ~SPPR101~
             port_exist = ~B_CONC1~
     RET     port_icon
 END
+
+
 
 /*
 //use eg
-COPY_EXISTING ~SPWI108.spl~ ~override~
+COPY_EXISTING ~SPPR101.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
 */
-
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Protection from Evil
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1018) //Concentrating on Protection from Evil
-    STR_VAR spell_name = ~SPWI113~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Shield
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1019) //Concentrating on Shield
-    STR_VAR spell_name = ~SPWI114~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI114.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Shocking Grasp
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1020) //Concentrating on Shocking Grasp
-    STR_VAR spell_name = ~SPWI115~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI115.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Sleep
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1021) //Concentrating on Sleep
-    STR_VAR spell_name = ~SPWI116~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI116.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Chill Touch
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1022) //Concentrating on Chill Touch
-    STR_VAR spell_name = ~SPWI117~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI117.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Reflected Image
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1023) //Concentrating on Reflected Image
-    STR_VAR spell_name = ~SPWI120~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI120.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Spook
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1024) //Concentrating on Spook
-    STR_VAR spell_name = ~SPWI125~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI125.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
-
 
 ///////////////////////////////////
 //////////Mage Spells Level 2
 
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Blur
-//__________________________________________________________________________________
-//__________________________________________________________________________________
 
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1026) //Concentrating on Blur
-    STR_VAR spell_name = ~SPWI201~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI201.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Horror
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1027) //Concentrating on Horror
-    STR_VAR spell_name = ~SPWI205~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI205.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
 
 //__________________________________________________________________________________
 //__________________________________________________________________________________
@@ -426,25 +214,6 @@ COPY_EXISTING ~SPWI206.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
 */
 
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Ray of Enfeeblement
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1029) //Concentrating on Ray of Enfeeblement
-    STR_VAR spell_name = ~SPWI221~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI221.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
 
 //__________________________________________________________________________________
 //__________________________________________________________________________________
@@ -466,45 +235,6 @@ COPY_EXISTING ~SPWI210.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
 */
 
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Stinking Cloud
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1031) //Concentrating on Stinking Cloud
-    STR_VAR spell_name = ~SPWI213~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI213.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
-
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Strength
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1032) //Concentrating on Strength
-    STR_VAR spell_name = ~SPWI214~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI214.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
 
 //__________________________________________________________________________________
 //__________________________________________________________________________________
@@ -526,25 +256,6 @@ COPY_EXISTING ~SPWI215.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
 */
 
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-//
-//			Concentrating on Luck
-//__________________________________________________________________________________
-//__________________________________________________________________________________
-
-LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1034) //Concentrating on Luck
-    STR_VAR spell_name = ~SPWI209~
-            port_exist = ~B_CONC1~
-    RET     port_icon
-END
-
-/*
-//use eg
-COPY_EXISTING ~SPWI209.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
-*/
 
 //__________________________________________________________________________________
 //__________________________________________________________________________________
@@ -586,34 +297,542 @@ COPY_EXISTING ~SPWI222.spl~ ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
 */
 
+
 ///////////////////////////////////
-//////////Priest Spells Level 1
+//////////Priest Spells Level 2
+
 //__________________________________________________________________________________
 //__________________________________________________________________________________
 //
-//			Concentrating on Bless
+//			Concentrating on Barkskin
 //__________________________________________________________________________________
 //__________________________________________________________________________________
 
 LAF ADD_ICONS
-    INT_VAR port_text = RESOLVE_STR_REF(@1001) //concentrating on bless
-    STR_VAR spell_name = ~SPPR101~
+    INT_VAR port_text = RESOLVE_STR_REF(@1046) //Concentrating on Barkskin
+    STR_VAR spell_name = ~SPPR202~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPPR202.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Hold Person
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1048) //Concentrating on Hold Person
+    STR_VAR spell_name = ~SPPR208~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPPR208.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Silence, 15' Radius
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1049) //Concentrating on Silence, 15' Radius
+    STR_VAR spell_name = ~SPPR211~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPPR211.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Charm Person or Mammal
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1082) //Concentrating on Charm Person or Mammal
+    STR_VAR spell_name = ~SPPR204~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+/*
+//use eg
+COPY_EXISTING ~SPPR204.spl~ ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+*/
+
+///////////////////////////////////
+//////////Mage Spells Level 3
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Haste
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1070) //Concentrating on Haste
+    STR_VAR spell_name = ~SPWI305~
             port_exist = ~B_CONC1~
     RET     port_icon
 END
 
 
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Invisibility, 10' Radius
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1071) //Concentrating on Invisibility, 10' Radius
+    STR_VAR spell_name = ~SPWI307~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Wraithform
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1076) //Concentrating on Wraithform
+    STR_VAR spell_name = ~SPWI315~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Dire Charm
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1077) //Concentrating on Dire Charm
+    STR_VAR spell_name = ~SPWI316~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Hold Person
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1050) //Concentrating on Hold Person
+    STR_VAR spell_name = ~SPWI306~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+///////////////////////////////////
+//////////Priest Spells Level 3
+
+
+///////////////////////////////////
+//////////Mage Spells Level 4
+
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Improved Invisibility
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1054) //Concentrating on Improved Invisibility
+    STR_VAR spell_name = ~SPWI405~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Minor Globe of Invulnerability
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1055) //Concentrating on Minor Globe of Invulnerability
+    STR_VAR spell_name = ~SPWI406~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Stoneskin
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1057) //Concentrating on Stoneskin
+    STR_VAR spell_name = ~SPWI408~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Otiluke's Resilient Sphere
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1066) //Concentrating on Otiluke's Resilient Sphere
+    STR_VAR spell_name = ~SPWI413~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+///////////////////////////////////
+//////////Priest Spells Level 4
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Mental Domination
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1051) //Concentrating on Mental Domination
+    STR_VAR spell_name = ~SPPR405~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+///////////////////////////////////
+//////////Mage Spells Level 5
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Domination
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1083) //Concentrating on Domination
+    STR_VAR spell_name = ~SPWI506~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Hold Monster
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1084) //Concentrating on Hold Monster
+    STR_VAR spell_name = ~SPWI507~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Protection From Normal Weapons
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1085) //Concentrating on Protection From Normal Weapons
+    STR_VAR spell_name = ~SPWI511~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+///////////////////////////////////
+//////////Priest Spells Level 5
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Iron Skins
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1086) //Concentrating on Iron Skins
+    STR_VAR spell_name = ~SPPR506~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Insect Plague
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1087) //Concentrating on Insect Plague
+    STR_VAR spell_name = ~SPPR517~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+
+///////////////////////////////////
+//////////Mage Spells Level 6
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Globe of Invulnerability
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1088) //Concentrating on Globe of Invulnerability
+    STR_VAR spell_name = ~SPWI602~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Mislead
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1089) //Concentrating on Mislead
+    STR_VAR spell_name = ~SPWI607~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on True Sight
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1090) //Concentrating on True Sight
+    STR_VAR spell_name = ~SPWI609~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Protection From Magical Weapons
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1091) //Concentrating on Protection From Magical Weapons
+    STR_VAR spell_name = ~SPWI611~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Improved Haste
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1092) //Concentrating on Improved Haste
+    STR_VAR spell_name = ~SPWI613~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+///////////////////////////////////
+//////////Priest Spells Level 6
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Blade Barrier
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1093) //Concentrating on Blade Barrier
+    STR_VAR spell_name = ~SPPR603~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+///////////////////////////////////
+//////////Mage Spells Level 7
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Project Image
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1094) //Concentrating on Project Image
+    STR_VAR spell_name = ~SPWI703~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Mass Invisibility
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1095) //Concentrating on Mass Invisibility
+    STR_VAR spell_name = ~SPWI721~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+///////////////////////////////////
+//////////Priest Spells Level 7
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Confusion
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1096) //Concentrating on Confusion
+    STR_VAR spell_name = ~SPPR709~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Globe of Blades
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1097) //Concentrating on Globe of Blades
+    STR_VAR spell_name = ~SPPR725~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+///////////////////////////////////
+//////////Mage Spells Level 8
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Simulacrum
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1098) //Concentrating on Simulacrum
+    STR_VAR spell_name = ~SPWI804~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Maze
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1099) //Concentrating on Maze
+    STR_VAR spell_name = ~SPWI813~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
+
+///////////////////////////////////
+//////////Mage Spells Level 9
+
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+//
+//			Concentrating on Absolute Immunity
+//__________________________________________________________________________________
+//__________________________________________________________________________________
+
+LAF ADD_ICONS
+    INT_VAR port_text = RESOLVE_STR_REF(@1100) //Concentrating on Absolute Immunity 
+    STR_VAR spell_name = ~SPWI907~
+            port_exist = ~B_CONC1~
+    RET     port_icon
+END
 
 /*
-//use eg
-COPY_EXISTING ~SPPR101.spl~ ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = %port_icon% END           //
+
+
+
+
+
+
+
+
 */
 
 
 
 
 
+
+
+
+ /*
+ //let's comment all of this out
 
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
@@ -732,9 +951,749 @@ COPY_EXISTING ~SPPR101.spl~ ~override~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//______________________________________________________________Invisibility to Undead__________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////
+//////Add Icons and Projectiles:
+////////////////////////////////
+//TO DO CONTINUE
+
+/*
+//add icons and projectile
+  LPF ALTER_SPELL_HEADER INT_VAR STR_VAR icon = EVAL  ~%spell_res%B~ END
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W103a.bam~ ~override/%spell_res%a.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W103b.bam~ ~override/%spell_res%b.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W103c.bam~ ~override/%spell_res%c.bam~
+//add bams to spl
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  WRITE_EVALUATED_ASCII 0x003a ~%spell_res%C~
+*/
+
+////////////////////////////
+//////Portrait Icons:
+////////////////////////////
+//TO DO CONTINUE 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//____________________________________________________________Lasting Breath____________________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TO DO CONTINUE
+
+ACTION_IF (%b_lasting_breath% > 0) BEGIN  //
+
+
+////////////////////////////
+//////NOTES:
+////////////////////////////
+//spells/abilities this gives immunity to: 
+  //BG(2)EE: Gas Spore (SPIN897.spl); Mane Gas (SPIN917.spl); Gas Cloud (SPIN979.spl); Cloudkill (SPIN673.spl), (SPWI016.spl), (SPWI502.spl); Stinking Cloud (SPWM187.spl), (SPIN940.spl), (SPWI004.spl), (SPWI213.spl); Wand of CK(WAND13.itm)
+  //IWDEE: Cloud of Pestilence (CLERIC_CLOUD_OF_PESTILENCE); 
+  //B_Spells: Choke (WIZARD_CHOKE);
+  //SR:
+  //MiH: 
+  //OS:
+  //ICONS DONE
+  // USE B_WZ108 as NAME
+///////////////////////////////////////////////
+//////Spell Basics: Pros, effs, bams, wavs, etc
+///////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+//////Spell Itself (and spell biz (e.g. sec spells)
+///////////////////////////////////////////////////
+
+////////////////////////////////
+//////Add Icons and Projectiles:
+////////////////////////////////
+
+/*
+//actually done
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+//add icons and projectile
+  LPF ALTER_SPELL_HEADER INT_VAR STR_VAR icon = EVAL  ~%spell_res%B~ END
+COPY ~%mod_folder%/data/new_spells/mage_1/B_WZ108a.bam~ ~override/%spell_res%a.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_WZ108b.bam~ ~override/%spell_res%b.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_WZ108c.bam~ ~override/%spell_res%c.bam~
+//add bams to spl
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  WRITE_EVALUATED_ASCII 0x003a ~%spell_res%C~
+*/
+////////////////////////////
+//////Portrait Icons:
+////////////////////////////
+
+////////////////////////////
+//////Immunity/Prot Lists:
+////////////////////////////
+
+////////////////////////////
+//////Scrolls: Creation
+////////////////////////////
+
+////////////////////////////
+//////Scrolls: Placement
+////////////////////////////
+
+////////////////////////////
+//////Compatibility
+////////////////////////////
+
+END //Lasting Breath
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//____________________________________________________________Mending ________________________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TO DO CONTINUE
+
+ACTION_IF (%b_mending% > 0) BEGIN  //
+
+
+////////////////////////////
+//////NOTES:
+////////////////////////////
+//step 1: Have to make broken items distinguishable
+  //**0-level cantrips**: This spell is installed (unchanged) if 0-level cantrips is installed.
+  //**1st-level cantrips**: This spell is installed (unchanged) if 1st-level cantrips is installed.
+
+///////////////////////////////////////////////
+//////Spell Basics: Pros, effs, bams, wavs, etc
+///////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+//////Spell Itself (and spell biz (e.g. sec spells)
+///////////////////////////////////////////////////
+
+////////////////////////////////
+//////Add Icons and Projectiles:
+////////////////////////////////
+
+////////////////////////////
+//////Portrait Icons:
+////////////////////////////
+
+////////////////////////////
+//////Immunity/Prot Lists:
+////////////////////////////
+
+////////////////////////////
+//////Scrolls: Creation
+////////////////////////////
+
+////////////////////////////
+//////Scrolls: Placement
+////////////////////////////
+
+////////////////////////////
+//////Compatibility
+////////////////////////////
+  //**0-level cantrips**: This spell is installed (unchanged) if 0-level cantrips is installed.
+  //**1st-level cantrips**: This spell is installed (unchanged) if 1st-level cantrips is installed.
+
+END //mending
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//_________________________________________________________________Phantasmal Force_____________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//________________________________________________________Improved Phantasmal Force_____________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//_____________________________________________________________Spectral Force___________________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//___________________________________________________________Phantasmal Killer__________________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//____________________________________________________________Protection from Cantrips__________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Protection from Cantrips (Protection): Target is immune to all cantrips/orisons
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//_______________________________________________________________PROTECTIVE SHELL_______________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Credit for this spell belongs to Subtledoctor (Modified with permission)
+
+ACTION_IF (%b_prot_shell% > 0) BEGIN  //
+
+////////////////////////////
+//////NOTES:
+////////////////////////////
+
+///////////////////////////////////////////////
+//////Spell Basics: Pros, effs, bams, wavs, etc
+///////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+//////Spell Itself (and spell biz (e.g. sec spells)
+///////////////////////////////////////////////////
+
+ADD_SPELL ~%mod_folder%/data/new_spells/mage_1/D5_WIAB.spl~ 2 1 ~WIZARD_PROTECTIVE_SHELL~ //
+        SAY NAME1 @65001
+        SAY NAME2 @65001
+        SAY UNIDENTIFIED_DESC @65002
+	SAY DESC @65002
+LAF RES_NUM_OF_SPELL_NAME
+  STR_VAR spell_name = ~WIZARD_PROTECTIVE_SHELL~
+  RET spell_res
+END
+//to clear earlier versions of the spell
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  LPF ALTER_EFFECT
+      INT_VAR match_opcode = 321            //
+      STR_VAR resource = EVAL ~%spell_res%~
+  END      //
+
+  
+////////////////////////////////
+//////Add Icons and Projectiles:
+////////////////////////////////
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  LPF ALTER_SPELL_HEADER INT_VAR STR_VAR icon = EVAL  ~%spell_res%B~ END
+COPY ~%mod_folder%/data/new_spells/mage_1/D5_WIABa.bam~ ~override/%spell_res%a.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/D5_WIABb.bam~ ~override/%spell_res%b.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/D5_WIABc.bam~ ~override/%spell_res%c.bam~
+//add bams to spl
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  WRITE_EVALUATED_ASCII 0x003a ~%spell_res%C~
+  
+////////////////////////////
+//////Portrait Icons:
+////////////////////////////
+//TO DO CONTINUE 
+
+////////////////////////////
+//////Immunity/Prot Lists:
+////////////////////////////
+//NA?  
+
+////////////////////////////
+//////Scrolls: Creation
+////////////////////////////
+COPY ~%mod_folder%/data/new_spells/mage_1/D5_WIDI.itm~ ~override/%spell_res%.itm~
+        SAY NAME1 @900009016
+        SAY NAME2 @65001
+	SAY DESC @65002
+  LPF ALTER_ITEM_HEADER STR_VAR icon = EVAL  ~%spell_res%A~ END
+  LPF ALTER_ITEM_EFFECT INT_VAR check_headers = 1 match_opcode = 146 STR_VAR resource = EVAL  ~%spell_res%~ END
+  LPF ALTER_ITEM_EFFECT INT_VAR check_headers = 1 match_opcode = 147 STR_VAR resource = EVAL  ~%spell_res%~ END
+  
+////////////////////////////
+//////Scrolls: Placement
+////////////////////////////
+
+//BGEE - Sorcerous Sundries
+ACTION_IF FILE_EXISTS_IN_GAME ~STO0703.STO~ BEGIN  //
+  COPY_EXISTING ~STO0703.sto~ ~override~
+    ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+END
+//High Hedge
+ACTION_IF FILE_EXISTS_IN_GAME ~HIGHHEDG.STO~ BEGIN  //
+  COPY_EXISTING ~HIGHHEDG.sto~ ~override~
+    ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~SCROLLS.STO~ BEGIN  //
+COPY_EXISTING ~SCROLLS.STO~ ~override~
+ ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #4
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~UDDROW25.STO~ BEGIN  //
+ COPY_EXISTING ~UDDROW25.STO~ ~override~
+  ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #4
+END
+
+ ACTION_IF FILE_EXISTS_IN_GAME ~BDSORCSC.STO~ BEGIN  //SoD
+  COPY_EXISTING ~BDSORCSC.STO~ ~override~
+   ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+ END
+
+ ACTION_IF FILE_EXISTS_IN_GAME ~STO0703.STO~ BEGIN  //SoD
+  COPY_EXISTING ~STO0703.STO~ ~override~
+   ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+ END
+
+
+////////////////////////////
+//////Compatibility
+////////////////////////////
+
+END //prot shell
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//____________________________________________________________Read Magic________________________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TO DO CONTINUE 
+
+ACTION_IF (%b_read_magic_arcane% > 0) BEGIN  //
+
+
+////////////////////////////
+//////NOTES:
+////////////////////////////
+//make sure there are priest scrolls for the mage to read (or mage spells limited to lev the mage can cast without this spell)
+//icons done
+ // USE B_WZ109 as NAME
+
+///////////////////////////////////////////////
+//////Spell Basics: Pros, effs, bams, wavs, etc
+///////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+//////Spell Itself (and spell biz (e.g. sec spells)
+///////////////////////////////////////////////////
+
+////////////////////////////////
+//////Add Icons and Projectiles:
+////////////////////////////////
+
+/*
+//actually done
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+//add icons and projectile
+  LPF ALTER_SPELL_HEADER INT_VAR STR_VAR icon = EVAL  ~%spell_res%B~ END
+COPY ~%mod_folder%/data/new_spells/mage_1/B_WZ109a.bam~ ~override/%spell_res%a.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_WZ109b.bam~ ~override/%spell_res%b.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_WZ109c.bam~ ~override/%spell_res%c.bam~
+//add bams to spl
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  WRITE_EVALUATED_ASCII 0x003a ~%spell_res%C~
+*/
+
+////////////////////////////
+//////Portrait Icons:
+////////////////////////////
+
+////////////////////////////
+//////Immunity/Prot Lists:
+////////////////////////////
+
+////////////////////////////
+//////Scrolls: Creation
+////////////////////////////
+
+////////////////////////////
+//////Scrolls: Placement
+////////////////////////////
+
+////////////////////////////
+//////Compatibility
+////////////////////////////
+
+END //read magic 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//___________________________________________________________________Reprieve___________________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Credit for this spell implementation belongs to Kjeron 
+
+ACTION_IF (%b_reprieve% > 0) BEGIN  //
+
+
+////////////////////////////
+//////NOTES:
+////////////////////////////
+//make sure there are priest scrolls for the mage to read (or mage spells limited to lev the mage can cast without this spell)
+
+///////////////////////////////////////////////
+//////Spell Basics: Pros, effs, bams, wavs, etc
+///////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+//////Spell Itself (and spell biz (e.g. sec spells)
+///////////////////////////////////////////////////
+
+
+ADD_SPELL ~%mod_folder%/data/new_spells/mage_1/B_W102.spl~ 2 1 ~WIZARD_REPRIEVE~ //
+        SAY NAME1 @66011
+        SAY NAME2 @66011
+        SAY UNIDENTIFIED_DESC @66012
+	SAY DESC @66012
+LAF RES_NUM_OF_SPELL_NAME
+  STR_VAR spell_name = ~WIZARD_REPRIEVE~
+  RET spell_res
+END
+//Protect against
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  LPF ALTER_EFFECT
+      INT_VAR match_opcode = 324            //
+      STR_VAR resource = EVAL ~%spell_res%~
+  END      //
+  LPF ALTER_SPELL_HEADER INT_VAR speed = 1 END
+
+////////////////////////////////
+//////Add Icons and Projectiles:
+////////////////////////////////
+
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+//add icons and projectile
+  LPF ALTER_SPELL_HEADER INT_VAR STR_VAR  speed = 1 icon = EVAL  ~%spell_res%B~ END
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W102a.bam~ ~override/%spell_res%a.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W102b.bam~ ~override/%spell_res%b.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W102c.bam~ ~override/%spell_res%c.bam~
+//add bams to spl
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  WRITE_EVALUATED_ASCII 0x003a ~%spell_res%C~
+
+////////////////////////////
+//////Portrait Icons:
+////////////////////////////
+//TO DO CONTINUE 
+
+
+
+////////////////////////////
+//////Scrolls: Creation
+////////////////////////////
+
+//Scroll
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W102.itm~ ~override/%spell_res%.itm~ // Actual Scroll
+        SAY NAME1 @66011
+        SAY NAME2 @66011
+        SAY UNIDENTIFIED_DESC @66012
+	SAY DESC @66012
+//  LPF ALTER_ITEM_HEADER STR_VAR icon = EVAL  ~%spell_res%A~ END   //scroll icon
+  LPF ALTER_EFFECT
+      INT_VAR match_opcode = 146            // Cast from scroll
+      STR_VAR resource = EVAL ~%spell_res%~
+  END      //
+  LPF ALTER_EFFECT
+      INT_VAR match_opcode = 147            // Learn from Scroll
+      STR_VAR resource = EVAL ~%spell_res%~
+  END      //
+
+////////////////////////////
+//////Scrolls: Placement
+////////////////////////////
+
+//BGEE - Sorcerous Sundries
+ACTION_IF FILE_EXISTS_IN_GAME ~STO0703.STO~ BEGIN  //
+  COPY_EXISTING ~STO0703.sto~ ~override~
+    ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+END
+//High Hedge
+ACTION_IF FILE_EXISTS_IN_GAME ~HIGHHEDG.STO~ BEGIN  //
+  COPY_EXISTING ~HIGHHEDG.sto~ ~override~
+    ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~SCROLLS.STO~ BEGIN  //
+COPY_EXISTING ~SCROLLS.STO~ ~override~
+ ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #4
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~UDDROW25.STO~ BEGIN  //
+ COPY_EXISTING ~UDDROW25.STO~ ~override~
+  ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #4
+END
+
+ ACTION_IF FILE_EXISTS_IN_GAME ~BDSORCSC.STO~ BEGIN  //SoD
+  COPY_EXISTING ~BDSORCSC.STO~ ~override~
+   ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+ END
+
+ ACTION_IF FILE_EXISTS_IN_GAME ~STO0703.STO~ BEGIN  //SoD
+  COPY_EXISTING ~STO0703.STO~ ~override~
+   ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+ END
+
+////////////////////////////
+//////Compatibility
+////////////////////////////
+
+//0 level cantrips: Changed to a cantrip
+//1 level cantrips: Duration changed to 1 round
+
+END// end reprieve
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//____________________________________________________________Spectral Hand__________________________________________________________________//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+
+//not even close to ready
+
+
+////////////////////////////
+//////NOTES:
+////////////////////////////
+//Need to check if code works in BG2, IWDEE and with SR TO DO CONTINUE
+//need to modify further by instructions in readme. chill_affect_undead_patch = 1 Undead fear effect; 2 = Undead hold effect
+//go back to CHill Touch range 10' IFF touch to target spells global is installed
+//NO LONGER A RANDED OPTION--REMOVE, BUT USE CODE FOR SPECTRAL HAND
+//spectral hand to 2nd lev if 1st level cantrips installed TO DO CONTINUE
+//continue modifying Spectral Hand
+
+//Spectral Hand
+///////////////////////////////////////////////////////////////////////
+ACTION_IF (%spectral_hand% > 0) BEGIN  //if install spect hand at all
+//Always starting w/original chill touch
+  LAF RES_NUM_OF_SPELL_NAME
+    STR_VAR spell_name = ~WIZARD_CHILL_TOUCH~
+    RET spell_res
+  END
+
+
+///////////////////////////////////////////////
+//////Spell Basics: Pros, effs, bams, wavs, etc
+///////////////////////////////////////////////
+//immunity to heal
+COPY ~%mod_folder%/data/revised_spells/chill_touch/B_CHLT1.spl~ ~override~  //removes protection
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@10110044) END  // Cannot heal by any means!
+
+//Chill Touch ---> Spectral Hand
+///////////////////////////////////////////////////////////////////////
+//let's 'get rid' of Chill Touch:
+ACTION_IF (%spectral_hand% = 3) BEGIN //replace chill touch w/spectral hand
+      COPY_EXISTING ~%spell_res%.spl~ ~backup/%mod_folder%/workspace/B_SPECT.SPL~
+        LAF ADD_SPELL_EX INT_VAR min = 51 max = 99  STR_VAR file = EVAL ~backup/%mod_folder%/workspace/B_SPECT.SPL~ name = ~WIZARD_CHILL_TOUCH~ RET spell_res END
+
+END //end 'getting rid' of Chill Touch
+///////////////////////////////////////////////////
+//////Spell Itself (and spell biz (e.g. sec spells)
+///////////////////////////////////////////////////
+
+      COPY_EXISTING ~%spell_res%.spl~ ~backup/%mod_folder%/workspace/B_SPECT.SPL~
+        LAF ADD_SPELL_EX INT_VAR type = 2 level = 1  STR_VAR file = EVAL ~backup/%mod_folder%/workspace/B_SPECT.SPL~ name = ~WIZARD_SPECTRAL_HAND~ RET spell_res END
+          COPY_EXISTING ~%spell_res%.spl~ ~override~
+          SAY NAME1 @10110043
+          SAY NAME2 @10110043
+          SAY UNIDENTIFIED_DESC @10110044
+	  SAY DESC @10110044
+              LPF ALTER_EFFECT INT_VAR duration = 60 END  //change duration to 1 turn
+//create weapon (default) version
+    COPY_EXISTING_REGEXP GLOB ~%spell_res%.spl~ ~override~
+     PATCH_IF (~%SOURCE_SIZE%~ > ~0x71~) BEGIN
+            GET_OFFSET_ARRAY ab_array 0x64 4 0x68 2 0 0 0x28
+            PHP_EACH ab_array AS int => ab_off BEGIN
+               GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
+               PHP_EACH fx_array AS int => fx_off BEGIN
+                  READ_SHORT fx_off fx_type
+                  READ_ASCII fx_off + 0x14 item
+                  PATCH_IF fx_type = 111 BEGIN     // Create magic weap
+                  //     PATCH_PRINT "%item%"  //test
+                       INNER_PATCH_SAVE the_item ~%item%~ BEGIN  END
+                       INNER_ACTION BEGIN
+                            COPY_EXISTING ~%the_item%.ITM~ ~override~
+                                LPF ALTER_ITEM_HEADER INT_VAR range = 10 thac0_bonus = 4 END
+                                LPF ALTER_EFFECT INT_VAR multi_match = 1 match_opcode = 12 timing = 1 dicenumber = 2 dicesize = 8 parameter1 = 0 parameter2 = 131072 savingthrow = 0 STR_VAR END
+                                   PATCH_IF (!GAME_IS ~iwdee~) AND (!FILE_EXISTS_IN_GAME ~dvimhere.mrk~) THEN BEGIN //not IWDEE w/o SR
+                                       //DO THE BG(2)EE VERSION HERE CONTINUE
+                                   END
+                                   ELSE BEGIN    //iwdee version
+                                        LPF DELETE_EFFECT INT_VAR match_opcode = 326 match_parameter2 = 1 END //remove undead affecting opcodes
+                                        LPF ALTER_EFFECT INT_VAR match_opcode = 326 savingthrow = 4 STR_VAR = ~B_CHLT1~ END //Immune to healing and regen
+                                   END
+                                   BUT_ONLY
+                       END//inner action
+                  END //type 111
+               END //php
+            END//php
+     END //source_size
+//end create weapon version
+//start direct target version
+
+//CONTINUE 
+
+//end direct target version
+
+////////////////////////////////
+//////Add Icons and Projectiles:
+////////////////////////////////
+
+////////////////////////////
+//////Portrait Icons:
+////////////////////////////
+
+////////////////////////////
+//////Immunity/Prot Lists:
+////////////////////////////
+
+////////////////////////////
+//////Scrolls: Creation
+////////////////////////////
+
+////////////////////////////
+//////Scrolls: Placement
+////////////////////////////
+
+////////////////////////////
+//////Compatibility
+////////////////////////////
+
+
+END //end spectral hand installation
+
+*/
+//end not even close to ready
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//___________________________________________________________________Vanish_____________________________________________________________________________//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ACTION_IF (%b_vanish% > 0) BEGIN  //
+
+
+////////////////////////////
+//////NOTES:
+////////////////////////////
+//make sure there are priest scrolls for the mage to read (or mage spells limited to lev the mage can cast without this spell)
+
+///////////////////////////////////////////////
+//////Spell Basics: Pros, effs, bams, wavs, etc
+///////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+//////Spell Itself (and spell biz (e.g. sec spells)
+///////////////////////////////////////////////////
+ADD_SPELL ~%mod_folder%/data/new_spells/mage_1/B_W104.spl~ 2 1 ~WIZARD_VANISH~ //
+        SAY NAME1 @66016
+        SAY NAME2 @66016
+        SAY UNIDENTIFIED_DESC @66017
+	SAY DESC @66017
+LAF RES_NUM_OF_SPELL_NAME
+  STR_VAR spell_name = ~WIZARD_VANISH~
+  RET spell_res
+END
+
+////////////////////////////////
+//////Add Icons and Projectiles:
+////////////////////////////////
+
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+//add icons and projectile
+  LPF ALTER_SPELL_HEADER INT_VAR STR_VAR icon = EVAL  ~%spell_res%B~ END
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W104a.bam~ ~override/%spell_res%a.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W104b.bam~ ~override/%spell_res%b.bam~
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W104c.bam~ ~override/%spell_res%c.bam~
+//add bams to spl
+COPY_EXISTING ~%spell_res%.spl~ ~override~
+  WRITE_EVALUATED_ASCII 0x003a ~%spell_res%C~
+
+////////////////////////////
+//////Portrait Icons:
+////////////////////////////
+//needed?  
+
+////////////////////////////
+//////Immunity/Prot Lists:
+////////////////////////////
+//NA
+
+////////////////////////////
+//////Scrolls: Creation
+////////////////////////////
+//Scroll
+COPY ~%mod_folder%/data/new_spells/mage_1/B_W104.itm~ ~override/%spell_res%.itm~ // Actual Scroll
+        SAY NAME1 @66016
+        SAY NAME2 @66016
+        SAY UNIDENTIFIED_DESC @66017
+	SAY DESC @66017
+//  LPF ALTER_ITEM_HEADER STR_VAR icon = EVAL  ~%spell_res%A~ END   //scroll icon
+  LPF ALTER_EFFECT
+      INT_VAR match_opcode = 146            // Cast from scroll
+      STR_VAR resource = EVAL ~%spell_res%~
+  END      //
+  LPF ALTER_EFFECT
+      INT_VAR match_opcode = 147            // Learn from Scroll
+      STR_VAR resource = EVAL ~%spell_res%~
+  END      //
+
+////////////////////////////
+//////Scrolls: Placement
+////////////////////////////
+
+
+//BGEE - Sorcerous Sundries
+ACTION_IF FILE_EXISTS_IN_GAME ~STO0703.STO~ BEGIN  //
+  COPY_EXISTING ~STO0703.sto~ ~override~
+    ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+END
+//High Hedge
+ACTION_IF FILE_EXISTS_IN_GAME ~HIGHHEDG.STO~ BEGIN  //
+  COPY_EXISTING ~HIGHHEDG.sto~ ~override~
+    ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~SCROLLS.STO~ BEGIN  //
+COPY_EXISTING ~SCROLLS.STO~ ~override~
+ ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #4
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~UDDROW25.STO~ BEGIN  //
+ COPY_EXISTING ~UDDROW25.STO~ ~override~
+  ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #4
+END
+
+ ACTION_IF FILE_EXISTS_IN_GAME ~BDSORCSC.STO~ BEGIN  //SoD
+  COPY_EXISTING ~BDSORCSC.STO~ ~override~
+   ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+ END
+
+ ACTION_IF FILE_EXISTS_IN_GAME ~STO0703.STO~ BEGIN  //SoD
+  COPY_EXISTING ~STO0703.STO~ ~override~
+   ADD_STORE_ITEM ~%spell_res%~ #1 #0 #0 ~IDENTIFIED~ #2
+ END
+
+
+
+ */
 
 

@@ -1,138 +1,44 @@
 # TO DO
 1) concentration.  
-Grease?  
-Protection from Evil  
-Spook  
-  
-Blur  
-Horror  
-Invisibility
-Ray of Enfeeblement
-Resist Fear   
-Stinking Cloud  
-Strength   
-Web.  
-  
-Dire Charm.  
-Haste. 
-Hold Person. 
-Hold Undead.  
-Invisibility, 10' Radius.  
-Monster Summoning I.  
-Protection from Cold. 
-Protection from Fire. 
-Protection from Normal Missiles. 
-Slow.  
-  
-Confusion.  
-Emotion.  
-Enchanted Weapon.  
-Greater Malison. 
-Ice Storm. 
-Improved Invisibility. 
-Minor Globe of Invulnerability. 
-Monster Summoning II.  
-Otiluke's Resilient Sphere.  
-Polymorph Self. 
-Polymorph Others.  
-Stoneskin. 
-Teleport Field.  
-  
-Animate Dead.  
-Chaos. 
-Cloudkill. 
-Conjure Lesser * Elemental.  
-Domination. 
-Feeblemind. 
-Hold Monster.  
-Monster Summoning III.  
-Protection from Acid. 
-Protection from Electiricty.  
-Protection from Normal Weapons. 
-   
-Carrion Summons. 
-Conjure * Elemental. 
-Death Fog. 
-Flesh to StoneskinGlobe of Ivulnerability. 
-Improved Haste. 
-Invisible Stalker. 
-Mislead. 
-Protection from Magic Energy. 
-Protection from Magical Weapons. 
-Summon Nishruu. 
-Tenser's Transformation. 
-Wyvern Call.  
+Invisibility 
+Resist Fear 
+Invisiblity: 10' Radius 
+Haste 
+Hold Person  
+Improved Invisibility
+Minor Globe of Invulnerability
+Otiluke's Resilient Sphere 
+Stoneskin 
+Domination 
+Hold Monster 
+Protection from Normal Weapons 
+Globe of Invulnerability
+Improved Haste
+Protection from Magical Weapons
+Mislead 
+Mass Invisibility
+Project Image 
+Simulacrum 
+Maze
+Absolute Immunity 
 
-Cacofiend. 
-Control Undead. 
-Delayed Blast Fireball.  
-Mantle. 
-Mass Invisibility. 
-Mordenkainen's Sword. 
-Project Image. 
-Protection from the Elements. 
-Sphere of Chaos. 
-Summon Djinn. 
-Summon Efreet. 
-Summon Hakeashar.  
-  
-Incendiary Cloud.  
-Maze.  
-Protection from Energy.  
-Summon Fiend. 
-  
-Absolute Immunity. 
-Gate. 
-Shpaechange. 
-  
-Summon * Planetar.  
-  
-Armor of Faith.  
-Bless. 
-Detect Evil. 
-Entangle. 
-Protection from Evil.  
-  
-Barkskin. 
-Charm Person or Mammal. 
-Flame Blade.  
-Hold Person.  
-Resist Fire/Cold. 
-Silence.  
-  
-Animate Dead.  
-Protection from Fire.  
-Rigid Thinking. 
-Summon INsects. 
-  
-Animal Summoning I.  
-Call Woodland Beings.  
-CLoak of Fear.  
+Armor of Faith
+Barkskin
+Bless
+Hold Person (as above)
+Silence 
 Mental Domination 
-Protection from Evil, 10' Radius.  
-Protection from Lightning.  
-
-Animal SUmmong II.  
-Champion's Strength. 
-Insect Plague. 
-Iron Skins. 
-
-Aerial Servant
-Animal Summoning III 
+Insect Plague 
+Iron Skins 
 Blade Barrier 
-COnjure Animals
-Conjure ELemental 
-
-ConfusionConjure Earth Elemental 
-Fire Storm
-Gate 
-
-*Elemental Summoning 
-Globe of Blades 
-Storm of Vengeance
-Summon * Deva 
+Confusion
+Globe of Blades
 
 # Done
+
+2020-12-10
+
+- Updated ADD_ICONS (from B_Spells)
 
 Version 0.00.04
 
